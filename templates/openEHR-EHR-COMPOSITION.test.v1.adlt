@@ -13,6 +13,10 @@ language
             >
             language = <[ISO_639-1::sl]>
         >
+        ["en"] = <
+            accreditation = <"">
+            language = <[ISO_639-1::en]>
+        >
     >
     
 description
@@ -32,6 +36,11 @@ description
             purpose = <"Record of encounter as a progress note.">
             use = <"">
         >
+        ["en"] = <
+            keywords = <"progress", "note", "encounter">
+            language = <[ISO_639-1::en]>
+            purpose = <"*Record of encounter as a progress note. (en)">
+        >
     >
     lifecycle_state = <"unmanaged">
     original_author = <
@@ -42,7 +51,7 @@ description
     other_contributors = <"Eric Gorouben">
 
 definition
-    COMPOSITION[id1.1] matches {    -- Encounter
+    COMPOSITION[id1.1] matches {    -- *Encounter (en)
         /category[id4]/defining_code matches {[at1]}
         /context[id5]/other_context[id2]/items matches {
             allow_archetype CLUSTER[id3] matches { 
@@ -63,12 +72,36 @@ definition
 terminology
     term_definitions = <
         ["en"] = <
+            ["id1"] = <
+                text = <"*Encounter (en)">
+                description = <"*Generic encounter or progress note composition (en)">
+            >
+            ["id3"] = <
+                text = <"*Context detail (en)">
+                description = <"*Local context detail. (en)">
+            >
+            ["at1"] = <
+                text = <"*event (en)">
+                description = <"*event (en)">
+            >
             ["id1.1"] = <
-                text = <"Encounter">
-                description = <"Generic encounter or progress note composition">
+                text = <"*Encounter (en)">
+                description = <"*Generic encounter or progress note composition (en)">
             >
         >
         ["sl"] = <
+            ["id1"] = <
+                text = <"Encounter">
+                description = <"Generic encounter or progress note composition">
+            >
+            ["id3"] = <
+                text = <"Context detail">
+                description = <"Local context detail">
+            >
+            ["at1"] = <
+                text = <"*event (en)">
+                description = <"*event (en)">
+            >
             ["id1.1"] = <
                 text = <"Encounter">
                 description = <"Generic encounter or progress note composition">
