@@ -1,9 +1,9 @@
 {
   "templates" : [ {
-    "id" : "openEHR-EHR-COMPOSITION.test.v1.0.0",
+    "id" : "openEHR-EHR-COMPOSITION.rep.v1.0.0",
     "rmType" : "COMPOSITION",
-    "name" : "*Encounter (en)",
-    "path" : "templates/openEHR-EHR-COMPOSITION.test.v1.adlt",
-    "sha" : "2e43b4b8ce1ef1d216753b73c01862a9e4a2b552"
+    "name" : "Report",
+    "path" : "templates/openEHR-EHR-COMPOSITION.rep.v1.adlt",
+    "sha" : "ab4f98914b02f9f2932e6b920c862620dcf1c5a2"
   } ]
 }
