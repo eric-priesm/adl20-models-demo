@@ -5,5 +5,17 @@
     "name" : "Report",
     "path" : "templates/openEHR-EHR-COMPOSITION.rep.v1.adlt",
     "sha" : "ab4f98914b02f9f2932e6b920c862620dcf1c5a2"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.e.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Encounter",
+    "path" : "templates/openEHR-EHR-COMPOSITION.e.v1.adlt",
+    "sha" : "ae9a90553f3ad67a7d48f262502a7ec6c5f82c01"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.t.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Patient summary",
+    "path" : "templates/openEHR-EHR-COMPOSITION.t.v1.adlt",
+    "sha" : "89e1eeeda4d386adb8686278d07fed6623a88db0"
   } ]
 }
