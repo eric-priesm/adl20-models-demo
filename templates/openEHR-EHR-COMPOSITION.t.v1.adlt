@@ -44,7 +44,9 @@ description
 definition
     COMPOSITION[id1.1] matches {    -- Patient summary
         /category[id2]/defining_code matches {[at1]}
-        content
+        content matches {
+            use_archetype OBSERVATION[id0.2, openEHR-EHR-OBSERVATION.ovl-t-blood_pressure-001.v1.0.0]
+        }
     }
 
 terminology
@@ -59,6 +61,148 @@ terminology
             ["id1.1"] = <
                 text = <"*Patient summary(en)">
                 description = <"*A snapshot summary of the vaccination record.(en)">
+            >
+        >
+    >
+
+
+---------------------------------------------------------------------------------
+template_overlay
+    openEHR-EHR-OBSERVATION.ovl-t-blood_pressure-001.v1.0.0
+
+specialize
+    openEHR-EHR-OBSERVATION.blood_pressure.v1.0.0
+
+definition
+    OBSERVATION[id1.1] matches {    -- *Blood Pressure(en)
+        /data[id2]/events matches {
+            EVENT[id7] matches {
+                /data[id4]/items matches {
+                    ELEMENT[id5] matches {
+                        value matches {
+                            DV_QUANTITY[id1054] matches {
+                                property matches {[at1055]}
+                                magnitude matches {|0.0..<1000.0|}
+                                precision matches {|0|}
+                                units matches {"mm[Hg]"}
+                            }
+                        }
+                    }
+                    ELEMENT[id6] matches {
+                        value matches {
+                            DV_QUANTITY[id1055] matches {
+                                property matches {[at1055]}
+                                magnitude matches {|0.0..<1000.0|}
+                                precision matches {|0|}
+                                units matches {"mm[Hg]"}
+                            }
+                        }
+                    }
+                    ELEMENT[id1007] matches {
+                        value matches {
+                            DV_QUANTITY[id1056] matches {
+                                property matches {[at1055]}
+                                magnitude matches {|0.0..<1000.0|}
+                                precision matches {|0|}
+                                units matches {"mm[Hg]"}
+                            }
+                        }
+                    }
+                    ELEMENT[id1008] matches {
+                        value matches {
+                            DV_QUANTITY[id1057] matches {
+                                property matches {[at1055]}
+                                magnitude matches {|0.0..<1000.0|}
+                                precision matches {|0|}
+                                units matches {"mm[Hg]"}
+                            }
+                        }
+                    }
+                }
+                /state[id8]/items matches {
+                    ELEMENT[id9] matches {
+                        /value[id1059]/defining_code matches {[ac1; at1002]}
+                    }
+                    allow_archetype CLUSTER[id1031] matches { 
+                        include
+                            archetype_id/value matches {/openEHR-EHR-CLUSTER\.level_of_exertion(-a-zA-Z0-9_]+)*\.v1/}
+                    }
+                    ELEMENT[id1044] matches {
+                        /value[id1061]/defining_code matches {[ac2; at1045]}
+                    }
+                    ELEMENT[id1006] matches {
+                        value matches {
+                            DV_QUANTITY[id1062] matches {
+                                property matches {[at1056]}
+                                magnitude matches {|-90.0..90.0|}
+                                precision matches {|0|}
+                                units matches {"°"}
+                            }
+                        }
+                    }
+                }
+            }
+            INTERVAL_EVENT[id1043] matches {
+                /math_function[id1063]/defining_code matches {[at1057]}
+                /width[id1064]/value matches {PT24H}
+            }
+        }
+        /protocol[id12]/items matches {
+            ELEMENT[id14] matches {
+                /value[id1067]/defining_code matches {[ac3]}
+            }
+            CLUSTER[id1034] matches {
+                /items[id15]/value[id1068]/defining_code matches {[ac4]}
+            }
+            ELEMENT[id1036] matches {
+                /value[id1070]/defining_code matches {[ac5]}
+            }
+            ELEMENT[id1011] matches {
+                /value[id1072]/defining_code matches {[ac6]}
+            }
+            allow_archetype CLUSTER[id1026] matches { 
+                include
+                    archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-a-zA-Z0-9_]+)*\.v1/}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["sl"] = <
+            ["id1.1"] = <
+                text = <"*Blood Pressure(en)">
+                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+            >
+        >
+        ["zh-cn"] = <
+            ["id1.1"] = <
+                text = <"*Blood Pressure(en)">
+                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+            >
+        >
+        ["de"] = <
+            ["id1.1"] = <
+                text = <"*Blood Pressure(en)">
+                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+            >
+        >
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"Blood Pressure">
+                description = <"The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.">
+            >
+        >
+        ["ja"] = <
+            ["id1.1"] = <
+                text = <"*Blood Pressure(en)">
+                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
+            >
+        >
+        ["nl"] = <
+            ["id1.1"] = <
+                text = <"*Blood Pressure(en)">
+                description = <"*The local measurement of arterial blood pressure which is a surrogate for arterial. pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.(en)">
             >
         >
     >
