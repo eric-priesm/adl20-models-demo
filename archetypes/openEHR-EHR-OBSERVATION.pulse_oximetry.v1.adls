@@ -5,21 +5,18 @@ language
     original_language = <[ISO_639-1::en]>
     translations = <
         ["de"] = <
-            language = <[ISO_639-1::de]>
             author = <
                 ["name"] = <"Jasmin Buck, Sebastian Garde">
                 ["organisation"] = <"University of Heidelberg, Central Queensland University">
             >
         >
         ["ru"] = <
-            language = <[ISO_639-1::ru]>
             author = <
                 ["name"] = <"Vyacheslav Mavrin">
                 ["organisation"] = <"JSC Comsoft">
             >
         >
         ["sv"] = <
-            language = <[ISO_639-1::sv]>
             author = <
                 ["name"] = <"Kirsi Poikela">
                 ["organisation"] = <"Tieto Sweden Healthcare & Welfare AB">
@@ -27,29 +24,23 @@ language
             >
         >
         ["es-ar"] = <
-            language = <[ISO_639-1::es-ar]>
             author = <
                 ["name"] = <"Dr. Leonardo Der Jachadurian">
                 ["organisation"] = <"Bitios.com">
             >
-            accreditation = <"Medical Doctor (Internal Medicine Specialist)">
         >
         ["nb"] = <
-            language = <[ISO_639-1::nb]>
             author = <
                 ["name"] = <"Lars Bitsch-Larsen">
                 ["organisation"] = <"Haukeland University Hospital">
             >
-            accreditation = <"MD, DEAA, speciialist in tropical medicine MBA">
         >
         ["ar-sy"] = <
-            language = <[ISO_639-1::ar-sy]>
             author = <
                 ["name"] = <"Mona Saleh">
             >
         >
         ["fa"] = <
-            language = <[ISO_639-1::fa]>
             author = <
                 ["name"] = <"Shahla Foozonkhah">
                 ["organisation"] = <"Ocean Informatics">
@@ -74,7 +65,6 @@ description
             use = <"*">
             misuse = <"*">
             keywords = <"Sauerstoff", "Behandlung mit Sauerstoff", "Pulsoxymeter", "Pulsoxymetrie">
-            copyright = <"© openEHR Foundation">
         >
         ["ru"] = <
             language = <[ISO_639-1::ru]>
@@ -92,7 +82,6 @@ description
 
 НЕ использовать для записи прямого измерения газов крови. Например, насыщение кислородом артериальной (SaO2) или венозной (SvO2) крови, или содержание кислорода (CAOC), которые обычно определяются инвазивными методами, например, специальными лабораториями газов крови или с помощью сосудистых катетеров. Такие измерения должны быть записаны в архетип OBSERVATION.lab_test-blood_gases.">
             keywords = <"парциальное давление", "насыщение", "карбоксигемоглобин", "метгемоглобин", "чрескожный", "пульс", "оксиметр", "оксиметрия", "концентрация", "неинвазивный", "жизненный", "кислород", "углекислый газ", "О2", "СО2", "оксигенация">
-            copyright = <"© openEHR Foundation">
         >
         ["sv"] = <
             language = <[ISO_639-1::sv]>
@@ -108,7 +97,6 @@ Används inte för mätning av perifert blodgas som innebär direktkontakt med b
 
 Används inte för invasiv blodgasmätning, t.ex. arteriell (Sa02), venös (SvO2) syremättnad eller syreinnehåll (CaOC) som vanligtvis fastställs av invasiva metoder såsom laboratorieblodgaser eller vaskulära katetrar. De bör också mätas med arketypen OBSERVATION.laboratory_test_result.">
             keywords = <"syre", "syrsättning", "syremättnad", "SpO2", "spMet", "spCO", "spOC", "karboxihemoglobin", "methemoglobin", "transkutan", "puls", "oximeter", "oximetri", "koncentration", "partiell", "tryck", "icke-invasiv", "vital", "O2", "CO2", "koldioxid", "SaO₂", "SaO2">
-            copyright = <"© openEHR Foundation">
         >
         ["es-ar"] = <
             language = <[ISO_639-1::es-ar]>
@@ -126,7 +114,6 @@ Las formas de onda deben ser registradas aquí cuando se utiliza para documentar
 
 No usar para registrar medidas directas de gases en sangre. Ej. SaO2 (saturación arterial), SvO2 (saturación venosa) o CaO2 (contenido de Oxígeno), usualmente determinados por métodos invasivos. Ej. laboratorio de gases en sangre o dispositivos catheter vascular. Estos deberían ser registrados en el arquetipo OBSERVATION.lab_test-blood_gases.">
             keywords = <"oxígeno", "oxigenación", "saturación", "SpO2", "ptcCO2", "ptcO2", "spMet", "spCO", "spOC", "carboxi-hemoglobina", "meta-hemoglobina", "transcutáneo", "pulso", "oxímetro", "oximetría", "saturómetro", "concentración", "parcial", "presión", "no invasivo", "vital", "O2", "CO2", "anhídrido carbónico", "dióxido de carbono">
-            copyright = <"© openEHR Foundation">
         >
         ["nb"] = <
             language = <[ISO_639-1::nb]>
@@ -145,7 +132,6 @@ Brukes ikke til å registrere perifere blodgassmålinger som involverer direkte 
 
 Brukes ikke til å registrere invasiv blodgassmåling, for eksempel arteriell (SaO₂) eller venøs (SvO₂) oksygenmetning eller oksygeninnhold (CaOC) som vanligvis måles ved hjelp av invasive metoder. Bruk OBSERVATION.laboratory_test_result til dette formålet.">
             keywords = <"oksygen", "oksygenering", "saturasjon", "SpO2", "spMet", "spCO", "spCaO", "karbonmonoksid hemoglobin", "methemoglobin", "puls", "oksimetri", "oksimeter", "konsentrasjon", "partial", "trykk", "non-invasiv", "vital", "O2", "CO2", "karbondioksid", "oksimetri", "oksymetri", "metning", "oksygenmetning", "SaO2", "SaO₂", "hypoksemi">
-            copyright = <"© openEHR Foundation">
         >
         ["ar-sy"] = <
             language = <[ISO_639-1::ar-sy]>
@@ -170,7 +156,6 @@ plesmythography
 و ينبغي تسجيل هذه القياسات باستخدام نموذج ملاحظة. الاختبار المعملي. غازات الدم.
 ">
             keywords = <"الأكسجين", "التأكسج", "تشبع الدم الطرفي بالأكسجين", "الضغط الجزئي لثاني أكسيد الكربون في الدم الطرفي", "الضغط الجزئي لثاني أكسيد الكربون في الدم الطرفي", "تشبع الميثوكسيهيموغلوبين في الدم الطرفي", "تشبع الكاربوكسي هيموغلوبين في الدم الطرفي", "المحتوى الأكسجيني في الدم الطرفي", "التشبع", "كربوكسي هيموغلوبين", "الميتهيموغلوبين", "عن طريق الجلد", "النبض", "مقياس التأكسج", "قياس التأكسج", "التركيز", "جزئي", "الضغط", "غير باضع", "حيوي - حياتي", "الأكسجين", "ثاني أكسيد الكربون">
-            copyright = <"© openEHR Foundation">
         >
         ["en"] = <
             language = <[ISO_639-1::en]>
@@ -188,7 +173,6 @@ Not to be used to record any peripheral blood gas measurement that involves dire
 
 Not to be used to record invasive blood gas measurement. For example, arterial (SaO₂), venous (SvO₂) oxygen saturation or Oxygen content (CaOC) which are usually determined by invasive methods such as laboratory blood gases or vascular catheter devices. These should also be recorded within the OBSERVATION.laboratory_test_result archetype.">
             keywords = <"oxygen", "oxygenation", "saturation", "SpO2", "spMet", "spCO", "spOC", "carboxyhaemoglobin", "methaemoglobin", "pulse", "oximeter", "oximetry", "concentration", "partial", "pressure", "non-invasive", "vital", "O2", "SaO₂", "SaO2", "sat", "sats", "hypoxaemia">
-            copyright = <"© openEHR Foundation">
         >
         ["fa"] = <
             language = <[ISO_639-1::fa]>
@@ -210,32 +194,10 @@ OBSERVATION.heart_rate-pulse
             misuse = <"هر گونه اندازه گیری گاز خون که شامل تماس مستقیم با خون و اندازه گیری .... و .... نباید با استفاده از این الگو ساز ثبت شود . ازالگو ساز ..... استفاده کنید . اندازه گیری جدید فشار خو.ن باید به ... اضافه شود
 نباید در ثبت اندازه گیری فشار گاز خون مستقیم استفاده شود به عنوان مثال .... ، .... اشباع اکسیژن یا محتوای اکسیژن .... که معمولا با روشهای غیر تهاجمی تعیین می شود.به عنوان مثال گازههای خونی آزمایشگاهی یا وسایل کاتتر عروقی . این موارد باید در الگو ساز ... ثبت شوند ">
             keywords = <"اکسیژن", "تولید اکسیژن", "اشباع", "اشباع اکسیژن خون", "SpO2", "ptcCO2", "ptcO2", "spMet", "spCO", "spOC", "ترکیب مونو اکسید کربن و هموگلوبین در گلبولهای قرمز", "پروتیین حمل کننده اکسیژن در هموگلوبین", "زیر پوستی", "وسیله اندازه گیری اکسیژن خون", "روش اندازه گیری اکسیژن خون", "غلظت", "جزیی", "فشار", "غیر تهاجمی", "حیاتی", "O2", "CO2", "کربن دی اکسید">
-            copyright = <"© openEHR Foundation">
         >
     >
     conversion_details = <
         ["author"] = <"aom14 model importer">
-    >
-    other_details = <
-        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
-        ["custodian_organisation"] = <"openEHR Foundation">
-        ["references"] = <"Derived from: Pulse oximetry, Deprecated archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2018-01-26]. Available from: http://openehr.org/ckm/#showArchetype_1013.1.188
-
-AARC (American Association for Respiratory Care) clinical practice guideline. Pulse oximetry. Respir Care. Respir Care 1992;37(8):891–897. Available from: http://www.rcjournal.com/cpgs/pulsecpg.html (accessed 2013 Feb 26). 
-
-Barker SJ, Badal JJ. The measurement of dyshemoglobins and total hemoglobin by pulse oximetry. Curr Opin Anaesthesiol. 2008 Dec;21(6):805-10. doi: 10.1097/ACO.0b013e328316bb6f. Review. PubMed PMID: 18997533. Available from: http://journals.lww.com/co-anesthesiology/Abstract/2008/12000/The_measurement_of_dyshemoglobins_and_total.20.aspx (accessed 2013 Feb 26).
-
-Hanning CD, Alexander-Williams JM. Pulse oximetry: a practical review. BMJ. 1995 Aug 5;311(7001):367-70. Review. PubMed PMID: 7640545; PubMed Central PMCID: PMC2550433. Available from: http://www.bmj.com/cgi/content/abstract/311/7001/367 (accessed 2013 Feb 26).
-
-Jubran A. Pulse oximetry. Crit Care. 1999;3(2):R11-R17. PubMed PMID: 11094477; PubMed Central PMCID: PMC137227. Available from: http://ccforum.com/content/3/2/R11 (accessed 2013 Feb 26).">
-        ["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
-        ["original_namespace"] = <"org.openehr">
-        ["original_publisher"] = <"openEHR Foundation">
-        ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"3676927CFD7E13F817A619512E6C2B1C">
-        ["build_uid"] = <"7b5e34d2-041f-49df-9c67-5942adf1cb8a">
-        ["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-        ["revision"] = <"1.0.1">
     >
 
 definition
@@ -1276,11 +1238,5 @@ terminology
             ["id16"] = <http://snomed.info/id/16206004>
             ["id19"] = <http://snomed.info/id/448703006>
             ["id55"] = <http://snomed.info/id/277923006>
-        >
-    >
-    value_sets = <
-        ["ac76"] = <
-            id = <"ac76">
-            members = <"at63", "at64", "at65">
         >
     >
