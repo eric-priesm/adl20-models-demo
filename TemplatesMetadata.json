@@ -17,5 +17,11 @@
     "name" : "Patient summary",
     "path" : "templates/openEHR-EHR-COMPOSITION.t.v1.adlt",
     "sha" : "89e1eeeda4d386adb8686278d07fed6623a88db0"
+  }, {
+    "id" : "openEHR-EHR-COMPOSITION.c.v1.0.0",
+    "rmType" : "COMPOSITION",
+    "name" : "Report",
+    "path" : "templates/openEHR-EHR-COMPOSITION.c.v1.adlt",
+    "sha" : "fcfddada43a54fe1b0a14b7b15f918526d4d8ae0"
   } ]
 }
